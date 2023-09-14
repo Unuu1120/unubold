@@ -1,0 +1,2 @@
+thislist=("abc)
+print(thislist)
