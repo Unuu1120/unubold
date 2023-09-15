@@ -1,0 +1,3 @@
+people = {3: "Jim", 2: "Jack", 4: "Jane", 1: "Jill"}
+for x, y in people.items():
+  print(x, y)

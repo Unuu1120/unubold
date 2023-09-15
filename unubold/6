@@ -1,0 +1,8 @@
+n=['12','345','555','575']
+counter=0
+i=0
+for i in n:
+    if i[0]==i[-1]:
+        counter=counter+1
+        
+print(counter)

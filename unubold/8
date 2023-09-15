@@ -1,0 +1,5 @@
+m=[1,2,4]
+if len(m)==0:
+    print("hooson")
+else:
+    print(a)

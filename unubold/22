@@ -1,0 +1,7 @@
+people = {3: "Jim", 2: "Jack", 4: "Jane", 1: "Jill"}
+def tulhuur(a):
+    if a in people:
+        print('yes')
+    else:
+        print('no')
+tulhuur(6)

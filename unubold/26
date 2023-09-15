@@ -1,0 +1,2 @@
+a={"a": 45, "b": 55}
+print(sum(a.values()))

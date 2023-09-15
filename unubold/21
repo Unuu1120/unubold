@@ -1,0 +1,3 @@
+people = {3: "Jim", 2: "Jack", 4: "Jane", 1: "Jill"}
+sorted(people.items())
+[(1, 'Jill'), (2, 'Jack'), (3, 'Jim'), (4, 'Jane')]

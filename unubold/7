@@ -1,0 +1,8 @@
+m=['abdba', 'abcd', '121', '121', 'abcd' ]
+a= set()
+b=[]
+for x in m:
+    if x not in a:
+        b.append(x)
+        a.add(x)
+print(a)

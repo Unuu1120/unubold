@@ -1,0 +1,6 @@
+a=input()
+people = {3: "Jim", 2: "Jack", 4: "Jane", 1: "Jill"}
+if a in people.values():
+    print('yes')
+else:
+    print("no")
