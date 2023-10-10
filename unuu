@@ -1,0 +1,63 @@
+# In[1]:
+
+
+#1 50-100 хүртэл тоон утга бүхий нэг хэмжээст массив (вектор) үүсгэ. 
+import numpy as np
+my_arr = np.arange(50,100)
+my_arr
+
+
+# In[3]:
+
+
+#2 Арван ширхэг 1, арван ширхэг 0, арван ширхэг 6 тоо бүхий нэг хэмжээст массивууд
+#(вектор) үүсгэ
+my_arr2 = np.zeros(10)
+print(my_arr2)
+my_arr3 = np.ones(10)
+print(my_arr3)
+my_arr4 = np.ones(10)*6
+my_arr4
+
+
+# In[4]:
+
+
+#3 20-32 хүртэл тоон утга бүхий 3x4 хэмжээтэй массив үүсгэ
+my_arr5 = np.arange(20,32)
+data1 = np.arange(20,32)
+a = np.reshape(data1,(3,4))
+print(a)
+
+
+# In[5]:
+
+
+#4 Диагональ нь 1-ийн тоо, бусад нь 0 байх 3x3 хэмжээтэй массив үүсгэ
+a = np.zeros((3,3), int)
+np.fill_diagonal(a,1)
+print(a)
+
+
+# In[6]:
+
+
+#5 Диагональ нь 1-5 хүртэл тоо, бусад нь 0 байх 5х5 хэмжээтэй массив үүсгэ.
+a = np.zeros((5,5), int)
+np.fill_diagonal(a,(1,2,3,4,5))
+print(a)
+
+
+# In[8]:
+
+
+#6 Хоёр хэмжээст массив үүсгэж нийт элементүүдийн нийлбэр, багана, мөрийн нийлбэрүүдийг хэвлэ.
+data3 = [[1,2,3,4], [6,5,4,8]]
+arr6 = np.array(data3)
+arr6
+a = sum(map(sum,arr6))
+print(a) #niit niilber
+#baganiin niilber
+print(np.sum(arr6, axis = 0))
+#sum of each row
+print(np.sum(arr6,axis=1))
